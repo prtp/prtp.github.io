@@ -381,3 +381,7 @@ paper-button {
     background: red;
     color: white;
 }
+
+aside {
+  width: 50%;
+}

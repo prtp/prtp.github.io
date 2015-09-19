@@ -17,29 +17,43 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
         <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
-        <link rel="import" href="bower_components/google-map/google-map.html">
-        <link rel="import" href="bower_components/paper-button/paper-button.html">
+        <link rel="import" href="/components/core-icons/core-icons.html">
         <link rel="import" href="bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+        <link rel="import" href="bower_components/paper-elements/paper-elements.html">
+        <link rel="import" href="bower_components/google-map/google-map.html">
+        <link rel="import" href="contact-list.html">
+        <core-icon icon="info"></core-icon>
 
     </head>
     <body>
         <!--
-
-28.5246153,77.2126098
-        -->
-        <div id="pp-map-id">
-        <google-map latitude="28.5246153" longitude="77.2126098"></google-map>
-        </div>
         <div id="pp-button-id">
             <paper-button>flat button</paper-button>
             <paper-button raised>raised button</paper-button>
             <paper-button noink>No ripple effect</paper-button>
             <paper-button toggles>toggle-able button</paper-button>
         </div>
-
+        <template>
+            <ul>
+                <template>
+                    <li>
+                        <img src={{item.img}} alt="" />
+                        <h3>{{item.name}}</h3>
+                        <span>{{item.email}}</span>
+                    </li>
+                </template>
+            </ul>
+        </template>
+        -->
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>-->
 
-        
+        <!-- <div id="pp-map-id">
+            <google-map latitude="28.5246153" longitude="77.2126098">
+                <google-map-marker latitude="28.5246153" longitude="77.2126098" title="Welcom to my Home!">
+                </google-map-marker>
+            </google-map>
+            <contact-list></contact-list>
+        </div> -->
     </body>
 </html>
